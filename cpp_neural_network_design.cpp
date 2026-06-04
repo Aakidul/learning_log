@@ -9,6 +9,7 @@ double sigmoid(double x){
     return 1.0 / (1.0 + exp(-x));
 }
 
+// NEURON'S FORMULA IS Y = activation(sum(inputs[i] * weights[i]) + bias)
 
 //CLASS FOR NEURON
 class Neuron{
