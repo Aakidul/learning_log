@@ -1,0 +1,27 @@
+#include <iostream>                                                                                         using namespace std;                                                                                        /*                                                    Question 1:                                                                                                 Pravin has applied a force of 100N on an object,      The object gets displaced in the horizontal direction and 400 Joules work is done. What is the displacment  of the object?
+                                                      angle of cos theta is 60°, but taken as 1/2 as per question.
+
+*/                                                    
+double solver(double F, double W){
+    //we need to find S = displacement                
+    // Work = Force x Displacement
+
+    double S = 0;
+//    W = F * S; // Step 1
+
+    S = W/F; //Step 2
+
+
+    double result = S * 2;
+    double ans =  result;
+    return ans;
+
+}
+
+
+
+int main(){
+    double solved = solver(100, 400);
+    cout << solved <<  " meters" << endl;
+    return 0;
+}
