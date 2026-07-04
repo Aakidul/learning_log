@@ -1,0 +1,43 @@
+#include <iostream>
+
+
+/*
+Question 3:
+
+The mass of first ball = m1 = 50g = 0.05kg,
+mass of the second ball = m2 = 100 = 0.1kg
+intial velocity of the first ball = u1 = 3m/s
+intial velocity of the second ball = u2 = 1.5m/s
+final velocity of the first ball = v1 = 2.5m/s,
+final velocity of the second ball = v2 = ?
+
+
+*/
+
+
+using namespace std;
+
+double q3(double m1, double m2, double v1, double v2){
+    // After collison v1 = 2.5m/s, v2 = ?
+
+    m1 = m1/1000;
+    m2 = m2/1000;
+
+    double after_collison_v1 = 2.5;
+
+    // As per law of conservation
+    // (M1•U1) + (M2•U2) = (M1•V1) + (M2•V2)
+
+    double after_collison_v2 = (m1 * after_collison_v1) +  m1;
+    double intial_momentum = (m1 * v1) + (m2 * v2);
+
+    double ans = intial_momentum/after_collison_v2;
+    return ans;
+}
+
+int main(){
+    double a = q3(50, 100, 3, 1.5);
+    cout << a << " m/s" << endl;
+    return 0;
+
+}
