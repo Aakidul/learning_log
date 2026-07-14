@@ -1,13 +1,14 @@
 #include <iostream>
 
 using namespace std;                                                                                                  int main(){
-    cout << "Enter Day Number: " << endl;
+    cout << "Enter day of the week as number: " << endl;
     int day;
     cin >> day;
 
 
     //Checking your luck days.
-
+    // based on personal experience
+    
     switch(day){
         case 1:
             cout << "Monday is lucky";                                 break;                                         
@@ -36,6 +37,7 @@ using namespace std;                                                            
            cout << "Invalid";
            break;
 }
+    cout << endl;
 
     return 0;
 }
