@@ -11,12 +11,4 @@ def sorting_algo(array):
     print(sorted_array)
 
 
-sorting_algo([5, 8, 19, 3, 67])
-
-
-"""
-~/practice $ python3 python3_custom_sort_1.py
-[3, 5, 3, 8, 8, 19, 3, 8, 3, 5, 19, 67, 8, 19, 5, 8, 3, 5]
-~/practice $
-
-"""
+# sorting_algo([5, 8, 19, 3, 67])
