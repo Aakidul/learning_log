@@ -24,3 +24,6 @@ print(a)
    and if problem is about order then we use permutations.
 """
 """
+
+
+"""2026"""
